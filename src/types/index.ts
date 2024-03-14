@@ -1,3 +1,5 @@
+import { ChangeEventHandler } from "react"
+
 export interface UserProfileType {
   login: string,
   id: number,
@@ -52,4 +54,11 @@ export interface UserProfileChildProp {
 export interface ListProp {
   label: string,
   text: string | number | undefined
+}
+
+
+export interface InputProp {
+  value: string,
+  placeholder: string,
+  onInputUpdated: ChangeEventHandler
 }
